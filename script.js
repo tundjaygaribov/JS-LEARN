@@ -231,3 +231,11 @@
 
 //console.log(personalMovieDB);
 
+
+////////////////////////ФУНКЦИИ////////////////////////////////
+
+function showFirstMessage(text) {
+    console.log(text);
+}
+
+showFirstMessage();
