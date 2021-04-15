@@ -234,6 +234,46 @@
 
 ////////////////////////ФУНКЦИИ////////////////////////////////
 
-function showFirstMessage(text) {
-    console.log(text);
-}
+//let num = 20; ///глобальная переменная
+
+//function showFirstMessage(text) {
+//    console.log(text);
+//    let num = 20; ///локальная переменная
+//    console.log(num);
+//}
+
+//showFirstMessage("Hello world");
+//console.log(num);
+
+//function calc(a, b) {
+//    return (a+b);
+//}
+
+//console.log(calc(4, 3));
+
+//function ret() {
+//    let num = 50;
+
+//    return num;
+//}
+
+//const anotherNum = ret();
+
+///классификация функций 
+//1. Function Declaration - Создается для начала выполнения скрипта, можно вызвать перед объявлением.
+//  function foo() {
+//    code
+//}
+
+//2. Function Expression - Создается только тогда,  когда доходит поток кода, можно вызвать только после объявления.
+//let foo = function() {
+//    code
+//}
+// const logger = function() {
+//     console.log('Hello');
+//};
+
+//3. Стрелочные функции - Не имеет своего контекста
+
+//const calc = (a, b) => a + b;
+
