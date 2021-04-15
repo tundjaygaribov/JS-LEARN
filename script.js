@@ -1,5 +1,5 @@
-////////////////////ПЕРЕМЕННЫЕ/////////////
 "use strict";
+////////////////////ПЕРЕМЕННЫЕ/////////////
 
 //a = 14;
 ///console.log(a);
@@ -136,3 +136,5 @@ personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
+
+alert("Hello");
