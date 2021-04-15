@@ -139,7 +139,7 @@
 
 //alert("Hi");
 
-////УСЛОВИЯ/////
+//////////////////УСЛОВИЯ//////////////////
 
 //if (4 == 4) {
 //    console.log('Ok!');
@@ -167,20 +167,48 @@
 
 
 /////////КОНСТРУКЦИЯ SWITCH (строгое сравнение)////////////
-const num = 50;
+//const num = 50;
 
-switch(num) {
-    case 49:
-        console.log('Error!');
-        break;
-    case 100:
-        console.log('Error!');
-        break;
-    case 50:
-        console.log('OK!');
-        break;
-    default:
-        console.log('Не в этот раз!');
-        break;
-}
+//switch(num) {
+//    case 49:
+//        console.log('Error!');
+//        break;
+//    case 100:
+//        console.log('Error!');
+//        break;
+//    case 50:
+//        console.log('OK!');
+//        break;
+//    default:
+//        console.log('Не в этот раз!');
+//        break;
+//}
 
+/////////////////////ЦИКЛЫ//////////////////
+
+//let num = 50;
+
+//while (num < 55) {
+//    console.log(num);
+//    num++;
+//}
+
+
+//do {
+//    console.log(num);
+//    num++; 
+//}
+//while (num <55);
+
+///
+//for (let i = 1; i < 8; i++) {
+//    console.log(i);
+//    num++;
+//}
+
+//for (let i = 1; i < 8; i++) {
+//    if (i === 6) {
+//        break;
+//    }
+//   console.log(i);
+//}
