@@ -354,4 +354,71 @@
 
 // writeYourGenres();
 
+////////////////////CALLBACK////////////////
+// function first() {
+//     setTimeout(function() {
+//         console.log(1);
+//     }, 500);
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback) {
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
+
+// learnJS('JavaScript', function() {
+//     console.log('Я прошел этот урок!');
+// });
+
+
+// function movies(fav, callback) {
+//     console.log(`Мой любимый фильм: ${fav}`);
+//     callback()
+// }
+
+// movies('Titanik', function() {
+//     console.log('А твой');
+// });
+
+
+/////////////////ДЕСТРУКТУРИЗАЦИЯ ОБЪЕКТОВ////////////////////
+
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function() {
+//         console.log("test"); ///// САМОДЕЛЬНЫЕ МЕТОДЫ
+//     }
+// };
+
+// const {border, bg} = options.colors;
+// console.log(bg); //// деструктуризация
+
+
+// options.makeTest();
+
+// for (let key in options) {    ////////ПЕРЕБОР КЛЮЧЕЙ В ОБЪЕКТЕ
+//     if (typeof options[key] === "object") {
+//         for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`); 
+//         }     
+//     }else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//     }
+// }
+
+// console.log (Object.keys(options).length); //СЧЕТ КЛЮЧЕЙ В ОБЪЕКТЕ СОЗДАВАЯ ИЗ КЛЮЧЕЙ МАССИВ  (ВСТРОЕННЫЕ МЕТОДЫ)
+
 
