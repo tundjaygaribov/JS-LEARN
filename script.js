@@ -422,3 +422,114 @@
 // console.log (Object.keys(options).length); //СЧЕТ КЛЮЧЕЙ В ОБЪЕКТЕ СОЗДАВАЯ ИЗ КЛЮЧЕЙ МАССИВ  (ВСТРОЕННЫЕ МЕТОДЫ)
 
 
+///////////////МАССИВЫ//////////////////
+
+
+// const arr = [1, 2, 3, 6, 8];
+// console.log(arr.length);
+// arr[99] = 0;
+// arr.pop();
+
+// console.log(arr); // удаление элемента с конца массива
+// arr.push(10); // добавление элемента в конец массива
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+// arr.forEach(function(num, i, arr){
+//     console.log(`${i}: ${num} внутри массива ${arr}`);
+// });
+
+
+// const str = prompt("", "");
+// const products = str.split(", ");
+// products.sort();
+
+// function compareNum(a, b) {
+//     return a-b;
+// }
+
+// console.log(products.join('; '));
+
+
+//////////////////////////////////////////////////
+
+// const num = {
+//     first: 10,
+//     second: 20
+// };
+
+// const clone = num;
+
+// clone.second = "LOL";
+
+// console.log(clone)
+
+// const quiz = {
+//     name: "",
+//     age: "",
+//     work: "",
+// //     married: ""
+// // };
+// // function question() {
+// //     quiz.name = prompt("Whats your name?");
+// //     quiz.age = prompt("How old are you?");
+// //     quiz.work = prompt("Whats your profession?");
+// //     quiz.married = prompt("Are you married?");
+// // }
+
+// // question();
+
+// // if (quiz.age < 18 ) {
+// //     alert(`Excuse me, ${quiz.name}, for this profession u have to be older than 18.`);
+// // } else {
+// //     alert(`Welcome to our company ${quiz.name}!`);
+// // }
+
+// // console.log(quiz);
+
+
+// //////////////ПЕРЕДАЧА ДАННЫХ ПО ССЫЛКЕ И ПО ЗНАЧЕНИЮ /////////////
+
+// let a = 5,
+//     b = a;
+
+// b = b + 5;
+
+// const obj = {
+//     a: 5,
+//     b: 1
+// };
+
+// const copy = obj; //ссылка
+
+// copy.a = 10;
+
+function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for(key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+
+    return objCopy;
+}
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x:4,
+        y:9
+    }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
