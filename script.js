@@ -510,26 +510,72 @@
 
 // copy.a = 10;
 
-function copy(mainObj) {
-    let objCopy = {};
+    // function copy(mainObj) {
+    //     let objCopy = {};
 
-    let key;
-    for(key in mainObj) {
-        objCopy[key] = mainObj[key];
-    }
+    //     let key;
+    //     for(key in mainObj) {
+    //         objCopy[key] = mainObj[key];
+    //     }
 
-    return objCopy;
-}
+    //     return objCopy;
+    // }
 
-const numbers = {
-    a: 2,
-    b: 5,
-    c: {
-        x:4,
-        y:9
-    }
-};
+    // const numbers = {
+    //     a: 2,
+    //     b: 5,
+    //     c: {
+    //         x:4,
+    //         y:9
+    //     }
+    // };
 
-const newNumbers = copy(numbers);
+    // const newNumbers = copy(numbers);
 
-newNumbers.a = 10;
+    // newNumbers.a = 10;
+
+    // const add = {
+    //     d:17,
+    //     e: 20
+    // };
+
+    // const clone = Object.assign(numbers, add);
+
+    // clone.d = 20;
+
+    // const oldArray = ['a', 'b', 'c'];
+    // const newArray = oldArray.slice();
+
+    // newArray[1] = 'o';
+
+    // ///////////////SPREAD////////////
+    // const video = ['youtube', 'vimeo', 'rutube'],
+    //       blogs = ['wordpress', 'livejournal', 'blogger'],
+    //       internet = [...video, ...blogs, 'vk', 'instagram'];
+
+    // console.log(internet);
+
+    // function log(a, b , c) {
+    //     console.log(a);
+    //     console.log(b);
+    //     console.log(c);
+    // }
+
+    // const num = [2, 5, 7];
+
+    // log(...num);
+
+    // const array = ["a", "b"];
+
+    // const newAarray = [...array];
+
+    // const q = {
+    //     one: 1,
+    //     two: 2
+    // };
+
+    // const newObj = {...q};
+
+    // console.log(newObj);
+     
+    
